@@ -1,0 +1,8 @@
+# simple left-right rotation after add
+
+add 5 true
+add 3 true
+add 4 true
+contains 5 1
+contains 4 0
+contains 3 1

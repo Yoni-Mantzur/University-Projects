@@ -1,0 +1,4 @@
+# extreme case: add the same value twice in data-constructor mode
+2 1 1 
+size 2
+contains 1 1

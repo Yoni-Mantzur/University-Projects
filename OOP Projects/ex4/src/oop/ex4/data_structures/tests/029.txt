@@ -1,0 +1,5 @@
+# minNodes - 3 4 5 
+
+minNodes 3 7
+minNodes 4 12
+minNodes 5 20

@@ -1,0 +1,57 @@
+
+Most of the format is:
+<cmd> <value> <result to expect>
+
+For example: Both of lines should return true.
+add 5 true
+contains 5 true
+
+Commands:
+	add
+	contains
+	delete
+	minNodes										(minNodes method..)
+	print											(Print the tree)
+	iter											(To check if the tree iterator is working properly)
+	size											(tree size)
+	copy											(Copies a tree and uses it afterwards to add values etc.)
+	data <int1> <int2> ... <intk>					(Data constructor, data keyword before numbers)
+	<int1> <int2> ... <intk>						(Data constructor, only numbers)
+	""												(Default constructor, empty line.)
+	c												(Default constructor)
+	stress							(Will add 100,000 upto size 100,000 elements to your tree and see if it dies - Thanks to Dotan Nir :D)
+	stressdel							(same as stress but only with deletion, will try to delete existing elements from your tree. (will try to delete most of them))
+	init 							( Will reset the tree, default constructor again in-run)
+	wreck								(Really, really, really crazy command, use on your own risk, seriously.)
+								wreck command will add roughly 300,000 elements and try to delete most of them.
+
+NOTE: # - at the start of a line is a comment.
+NOTE2: You can leave blank lines to make it easier to read, ONLY AFTER YOU CALLED CONSTRUCTOR.
+		HOWEVER PREFER using # instead of a blank line.
+
+Obeys format: <cmd> <value> <result>
+	add
+	contains
+	delete
+	minNodes
+
+Obeys format: <cmd> <result>:
+	size <int>
+
+Obeys format: <cmd>
+	c - DEFAULT Constructor. 'c' only. will ignore other words after it.
+	"" - DEFAULT CONSTRUCTOR. empty line in file.
+	init - resets the tree, default constructor in-run
+Obeys format: <cmd> <int1> <int2> <int3> ... <intk>
+					or
+			<int1> <int2> <int3> ... <intk>
+
+	data - Constructs with data.
+	<int1> <int2> <int3> ... <intk>
+
+To copy a tree to another: after putting values in a tree use:
+	copy       - copies tree1 to tree2 and assigns tree1 = tree2;
+	iter
+	print
+	stress 		- Adds 100,000 elements to your tree and tests its 'add' endurance.
+	stressdel   - same as stress but only with deletions. Takes elements from your tree and deletes most of them.

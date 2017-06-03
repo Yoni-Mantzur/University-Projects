@@ -1,0 +1,89 @@
+yoni_mantzur
+
+=============================
+=      File description     =
+=============================
+filters package -
+
+filter.java - An interface representing a filter, contains filter method for file.
+
+filter.*.java - Classes that representing a kinds of the filters were given, each deserve class is own.
+                          
+SizeFilter.java - Abstract class that representing a kinds of the filters using size file as parameter.
+                              
+FileNameFilter.jave - Abstract class that representing a kinds of the filters using name file as parameter.
+
+YesOrNoFilter.java - Abstract class that representing a kinds of the filters using functionality file as
+					 parameters.
+					
+NegativeFilter.java - Class that representing an opposite of given filter.
+
+filters.exceptions package - 
+
+FilterException.java - Exception of Filter. (type one exception).
+
+orders package -
+
+order.java - An interface representing a order, contains order method for file.
+
+order.*.java - Classes that representing a kinds of the orders were given, each deserve class is own.
+
+ReversOrder.java - Class that representing an opposite of given order.
+
+orders.exceptions package -
+
+OrderException.java - Exception of Order. (type one exception).
+
+sections package -
+
+Section.java - class that representing a sub_section from commendFile. Contains filter, order and warnings.
+
+oop.ex5.filescript package - 
+
+ParsingFile.java - Class that wraps a static method that pars a commendFile to sub-sections.
+
+MyFileScript.java - Manager of the sections.
+
+oop.ex5.filescript.exceptions package - 
+
+OneTypeException.java - Exception of one type.
+
+SecondTypeException.java - Exception of second type.
+
+=============================
+=          Design           =
+=============================
+
+I implemented the tool of creation list of files per filter and order with decomposing missions:
+Filter has the filter job, order the same and section represent section from file commend.
+This way, each part has independent abilities what saves the open/close design.
+
+Moreover, the main class, MyFileScript, does'nt even know the existence of different kinds of filters  or 
+orders, only works with the Filter/Order interfaces and parsingFile tool the contact with Section. 
+
+I used exceptions mechanism (see Implementation details section) to handle with some exceptions can happen.
+
+=============================
+=  Implementation details   =
+=============================
+
+Exceptions - 
+
+1. I implemented the exception in a hierarchy that go over Filter exception, Order exception, and those are a
+   sons of OneTypeException and this and TwoTypeException sons of Exception. This structure make logical
+   because it made difference between handle with OneTypeException and TwoTypeException.
+
+2. I implemented the sorting files mission with Comperator interface. Each Order is an implementation of
+   Comperator and then in the manager I used ArrayList structure and collection sorting to sort (with nlog(n))
+   the files the  ArrayList contained.
+   I chosed ArrayList structure because I did'nt know how many sections can be in the CommendFile,
+   se ArrayList was a good option for not giva a size as factor like I wanted.
+
+
+=============================
+=    Answers to questions   =
+=============================
+
+In QUISTIONS file.
+
+

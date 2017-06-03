@@ -1,0 +1,126 @@
+# Fun with Tree Recycling
+c
+add 5 true
+add 3 true
+add 10 true
+add 2 true
+add 4 true
+add 8 true
+add 12 true
+add 1 true
+add 7 true
+add 9 true
+add 11 true
+add 13 true
+add 6 true
+size 13
+contains 1 3
+contains 2 2
+contains 3 1
+contains 4 2
+contains 5 0
+contains 6 4
+contains 7 3
+contains 8 2
+contains 9 3
+contains 10 1
+contains 11 3
+contains 12 2
+contains 13 3
+delete 2 true
+size 12
+contains 12 2
+contains 13 3
+delete 2 false
+size 12
+contains 1 3
+contains 2 -1
+contains 3 2
+contains 4 3
+contains 5 1
+contains 6 3
+contains 7 2
+contains 8 0
+contains 9 2
+contains 10 1
+contains 11 3
+contains 12 2
+contains 13 3
+iter
+copy # Copies tree
+add 4 false
+add 8 false
+add 12 false
+add 1 false
+add 7 false
+size 12
+delete 10 true
+size 11
+iter
+add 21 true
+add 20 true
+add 19 true
+add 18 true
+add 17 true
+add 16 true
+add 15 true
+add 32 true
+add 50 true
+add 1 false
+add 30 true
+size 21
+iter
+copy # Copies tree again
+iter
+add 100 true
+add 101 true
+add 99 true
+add 98 true
+add 97 true
+add 96 true
+add 95 true
+add 90 true
+delete 100 true
+contains 96 1
+contains 2 -1
+contains 100 -1
+contains 1 4
+contains 8 4
+contains 4 4
+contains 6 4
+contains 11 4
+contains 13 4
+contains 18 4
+contains 20 4
+contains 30 4
+contains 50 4
+contains 95 4
+size 28
+iter
+add 5 false
+add 3 false
+add 10 true
+add 2 true
+add 4 false
+add 8 false
+add 12 false
+add 1 false
+add 7 false
+add 9 false
+add 11 false
+add 13 false
+add 6 false
+size 30
+copy # Copies tree again
+iter
+delete 5 true
+delete 10 true
+delete 101 true
+delete 15 true
+delete 5 false
+size 26
+print
+stress
+copy
+stressdel
+copy

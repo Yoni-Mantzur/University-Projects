@@ -1,0 +1,88 @@
+#Week 6 Questions
+#============
+
+#Map<A,Integer> myMap = new HashMap<>();
+#class A { }
+#class B extends A { }
+#Select all lines that will pass compilation
+#1: myMap.put(new A(), new Integer(6));
+#2: myMap.put(new B(), new Integer(6));
+#3: myMap.put(new B(), 6);
+#4: myMap.put(new Object(), new Integer(6));
+
+w6Answer1 = (1,2)
+# The answer should be a python-tuple of the chosen numbers, i.e. (1,7,3,8) or (2,6,1)
+# optional explanation.
+
+#public class Number implements Comparable<Number> {}
+#ComplexNumber num1 = new ComplexNumber(5,2);
+#ComplexNumber num2 = new ComplexNumber(4,3);
+#int compareResult = num1.compareTo(num2);
+#What are the declarations of the ComplexNumber class for which the above code will compile? (multiple choice)
+#1: public class ComplexNumber implements Comparator<ComplexNumber> {}
+#2: public class ComplexNumber implements Comparable<ComplexNumber> {}
+#3: public class ComplexNumber extends Number<ComplexNumber> {}
+#4: public class ComplexNumber extends Number {}
+
+w6Answer2 = (2)
+# The answer should be a python-tuple of the chosen numbers, i.e. (1,7,3,8) or (2,6,1)
+# optional explanation.
+
+#Choose all correct statements:
+#1: A class can have only a single Comparator.
+#2: The implementation of compareTo(A a) should be consistent with that of equals() in the class A.
+#3: Comparators have access to private data members.
+#4: Only the implementation of the Comparable<A> can be used to determine the order of elements in a TreeSet<A>.
+#5: A Comparator<A> can be used to order objects of the type A, and of types extending A.
+#6: Comparators allow us to change the comparison methods of some class in runtime.
+
+w6Answer3 = (2,4,5,6)
+# The answer should be a python-tuple of the chosen numbers, i.e. (1,7,3,8) or (2,6,1)
+# optional explanation.
+
+
+#Week 7 Questions
+#============
+
+#public void doAction() {
+#	doFoo();
+#	doBar();
+#}
+#
+#For every checked exception thrown by the methods doFoo() and doBar(), the above method doAction() 
+# must either catch it or explicitly declare it as thrown.
+#1: Correct
+#2: Incorrect
+
+w7Answer1 = 1
+# optional explanation.
+
+# class ExceptionA extends Exception {}
+# class ExceptionB extends ExceptionA {}
+# class ExceptionC extends ExceptionA {}
+#Which of the following catch clauses will NOT catch an exception of type ExceptionB? (single choice)
+#1: catch (Exception e) {...
+#2: catch (ExceptionA e) {...
+#3: catch (ExceptionB | ExceptionC e) {...
+#4: catch (ExceptionC e) {...
+
+w7Answer2 = 4
+# optional explanation.
+
+#Which of the following is true? (single choice)
+#1: An exception cannot include any data members.
+#2: Unchecked exceptions cannot be caught by a try-catch clause.
+#3: Unchecked exceptions cannot be thrown by the throw key-word.
+#4: Methods can declare that they throw unchecked exceptions.
+
+w7Answer3 = 3
+# optional explanation.
+
+#Which of the following is NOT true? (single choice)
+#1: Packages can be used to group together related classes.
+#2: Packages have no effect over access permission between different classes.
+#3: A class doesn't have to extend class A to access its protected members.
+#4: Packages can be used to solve conflicting class names.
+
+w7Answer4 = 2
+# optional explanation.

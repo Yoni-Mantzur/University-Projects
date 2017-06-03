@@ -1,0 +1,105 @@
+yoni_mantzur
+
+=============================
+=      File description     =
+=============================
+IntegerBstNode.java - Class that representing a node of the BstTree wraps a Integer number.
+                          
+BstTree.java - Class that representing a bst tree. With the functionallity of add, contains, deleting and 
+               others.
+                              
+AvlOutOfBalance.jave - Abstract class, with static methods: charging of identification of violation in the
+                       the given node, classify it to it's violation kind and methods to fix it.
+
+AvlTree.java - Warpping class of bstTree object, that charge on save this tree balance. Contain sub-class
+               that implements iterator of this tree.
+
+
+=============================
+=          Design           =
+=============================
+I implemented the AvlTree as wrapping class of BstTree object, means using composition of the bstTree object. 
+The logical thought is that AvlTree class use as 'decorating' class of given bst tree.
+More over, I use in sub-class of the iterator of the tree for incapsulation style.
+
+The idea of this design thought is that i implemented the bst tree operations, and that brings the 
+extensability to come up, if some there will be other bstTree with other pattern that i wants to implements.
+In addition, the AvlOutOfBalance class leads some orginization in my code, that representing the operations 
+that AvlTree needs to do on the bst tree.
+
+One more thing, for minimal API movmment, all the classes are in package modifire, and there are not public
+methods in AvlTree more then the API was given to us, more over, I decided not to us inheritance for
+save this minimal API style.
+
+=============================
+=  Implementation details   =
+=============================
+
+I implemented the AvlTree in a composition of BstTree object, I used it's methods that I implemented.
+Means that my AvlTree is a BstTree that implements operation methods on it.
+
+Implemation of methods in AvlTree class- 
+
+ - add(int addNumber) - 
+
+I implimented this method, using the bstTree method I implemented before, that it's search the place in the 
+tree and if it's not in the tree add it as a leaf. The AvlTree adds operation of checking if there is
+a violation in the tree after the adding (from the element that added to the root).
+
+ - delete(int deleteNumber) - 
+
+ I implimented this method again, using the bstTree method I implemented before, it's search the place of
+ this item in the tree and earase it after checking the number of sons it has (each case, brings other 
+ operation). The AvlTree adds operation of checking if there is a violation in the tree after the deleting
+ bstTree operation again from the parent to the root, but now its not sureness that there is only one
+ violation.
+
+=============================
+=    Answers to questions   =
+=============================
+
+1. Implementing Questions - Implementation details section.
+
+2. The question from section 5 - So we need to built a AvlTree with 12 nodes and in hight 4, that
+   specific insertion brings this tree with those minimal number of nodes (means after deletion any
+   node from the tree, the height will become 3). 
+   so my answer is to insert this array - [8,5,11,3,7,10,2,12,4,6,9]
+
+   First the insertion in this order will not bring violations and the height is 4 like we wish.
+   If we will delete any node, the height will down to 3. proof - 
+
+   we will get a tree with node depth
+                            8     0
+                            5     1
+                            11    1
+                            3     2
+                            7     2
+                            10    2
+                            12    2
+                            2     3
+                            4     3
+                            6     3
+                            9     3
+                            12    4
+   
+   - Delete 1 >> means delete the only leaf in 4 depth, means height will down
+   - Delete 2 >> means 1 will up to be leaf in 3 depth.
+   - Delete 3 >> means 4 will up (Successor) and after LL rotation will be tree with depth 3.
+   - Delete 4 >> means there will be violation (LL) in 3 and then the depth will be 3
+   - Delete 5 >> means 6 will up, and then it will be a violation (LL) in 6 so after that the depth will be 3
+   - Delete 6 >> means violation (LL) in 5 and like before after that the depth will be 3.
+   - Delete 7 >> means violation (LL) in 5 after that the depth 3.
+   - Delete 8 >> means 9 will up, and then will be (LL) violation in 9 and after that the depth will be 3
+   - Delete 9 >> means will be (LL) violation in 8 and after that the depth will be 3
+   - Delete 10 >> 9 will up and then again,  will be (LL) violation in 8 and after that the depth will be 3
+   - Delete 11 >> 12 will up and then again,  will be (LL) violation in 12 and after that 
+     violation (LL) in 8 and after that the depth will be 3.
+   - Delete 12 >> Like before, will be (LL) violation in 12 and after that violation (LL) in 8 and 
+     after that the depth will be 3.
+
+     The proccess of creation this tree, was to creat tree with minimal node in high 1, then 2, then 3
+     and then 4. As we assuming that if h-1 is minimal, we can creat inuctivly h with minimal.
+            
+
+
+

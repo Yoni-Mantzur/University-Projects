@@ -1,0 +1,5 @@
+# simple delete non-existing value + size
+
+add 5 true
+delete 6 false
+size 1

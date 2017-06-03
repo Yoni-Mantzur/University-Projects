@@ -1,0 +1,83 @@
+yoni_mantzur
+
+=============================
+=      File description     =
+=============================
+SpaceShipFactory.java - contains an one static charge taking the arguments from command line and to send
+all the ships object will be in the game to SpaceWars.
+
+SpaceShip.java - implements the SpaceShip abstract class. 
+                 Charge of a ship that will be in the SpaceWars game.
+
+HumanControlledShip.java - implements the Human controlled ship type as explained in exercise.
+
+EnemyShip.java - implements the absract class EnemyShip. for this ex2, it means what is not HumanControlled 
+                 ship.   
+
+AggressiveShip.java - implements the Aggressive ship type as explained in exercise.
+
+BasherShip.java - implements the Basher ship type as explained in exercise.
+
+RunnerShip.jave - implements the Runner ship type as explained in exercise.
+
+DrunkardShip.java - implements the Drankard ship type as explained in exercise. (see  'Answers to questions')
+
+SpecialShip.java -  implements the Special ship type as explained in exercise. (see  'Answers to questions')
+
+Energy.java - implements an Interface of an enrgy value of objects. (see 'Implementation details')
+
+Health.java - implements an Interface of a Health value of objects. (see 'Implementation details')
+
+Shootable.java - implements an Interface of an ability to shoot for objects. (see 'Implementation details')
+
+Precautians.java - implements a class that charge on the Precautians Enemy ship need needs to check for.
+
+Shield.java - implements a class that charge on the Shield object and it's abilities.
+
+
+=============================
+=          Design           =
+=============================
+I implemented the SpaceShip class as an bastrat class that implemnts Health, Energy and shootable Interfaces.
+Those came with the thought that each ship that we created or will creat! as an expression for
+extensability value! Moreover, SpaceShip class just represent the frame of each kind of spaceShip that heirs
+from this method. If in the future we or others would like to add some characters to the game, that include
+the ships it will be much easy just to implement it in the SpaceShip class. 
+In additional I used Compositions with several classes such as Shield, Precautians and the SpaceShipPhysics,
+It helps the classes SpaceShip and EnemyShip to be more Sensible of the classes and their relationships, 
+because each class like that contains those feateres that in our mids it's really logical.
+Despite of that somtimes I didn'nt know what is more important - the minimal API or the logical part,
+I decided to go with my logical and probelly because of that SpaceShip has alot of public methods and it 
+should be more minimaly in it's API. 
+I wants to add that the design part was really difficult to built. It's my first time much from the design
+was on me, and just after we learned alot of ways to improve the design. After all I am satisfied with my 
+code and feel and I learned much!
+
+
+
+=============================
+=  Implementation details   =
+=============================
+In the Implemation I add the Interfaces - Energy, Health,  Shootable for all the kinds of ships will be.
+I used also in inherited feature that all the kinds of ships will heir from SpaceShip abstract class that 
+implements all those Interfaces above. 
+Moreover, I implemented Classes of - Shield, Precautians and EnemyShip that helps me to use some functions 
+and to express the relations between the kindes of ships as I implemented in compusitions.
+
+
+=============================
+=    Answers to questions   =
+=============================
+
+1)
+The DrunkardShip implemetion was that each round it will circle around himself, really like a drunk man!
+I implemented also that randomly the ship will fire and if randomly it dicided not to fire, it will teleport!
+Actully it is reallly funny because I was lossing to this ship time after time after all :).
+
+2)
+The SpecialShip implemetion is really special! I implemenmted it that for the first 10 points life this ship
+looking like very stuipd pilot leadership but and you will think that it's not so difficult to down from it 
+the first 10 points of life, but then when the pilot understand that it becomes intresting he will
+attack with all the massive power he has!
+The implemation was that in first 10 points of life deduction, the ship do'es stuiped things and then it
+fire and run after the other ships with alot of power. Enjoy!

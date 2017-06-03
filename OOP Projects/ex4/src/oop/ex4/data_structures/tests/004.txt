@@ -1,0 +1,4 @@
+# simple add test of an existing value
+
+add 5 true
+add 5 false

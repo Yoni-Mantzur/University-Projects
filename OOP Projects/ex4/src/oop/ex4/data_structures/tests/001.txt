@@ -1,0 +1,2 @@
+# simple creation of an empty tree
+

@@ -1,0 +1,3 @@
+# simple contains test of a non-existing value
+
+contains 5 -1

@@ -1,0 +1,4 @@
+# simple contains of an existing value
+
+add 5 true
+contains 5 0

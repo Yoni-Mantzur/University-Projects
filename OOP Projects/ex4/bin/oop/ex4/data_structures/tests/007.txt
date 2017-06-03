@@ -1,0 +1,4 @@
+# simple delete of an existing value
+
+add 5 true
+delete 5 true

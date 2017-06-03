@@ -1,0 +1,27 @@
+﻿Ex4 Tester, by Ben Asaf
+
+
+To setup: place all the content inside the ex4 package folder, oop.ex4.data_structures.
+
+Default path for tests folder is: "src\oop\ex4\data_structures\tests\". 
+If you wish to set it to another path, you have 2 options:
+1) The tester will ask you for input for the path to the tests folder in-case the default path was not found.
+2) Change the 'DEFAULT_PATH" constant String variable inside the tester file, FromFilesTester.java.
+
+To setup the print functionality:
+Fill in the details inside FromFilesTester.java, right under the DEFAULT_PATH variable.
+
+Those are the variables:
+
+private static final String TREE_ROOT_VARIABLE_NAME = "rootTree";  // What is the name of the variable that holds the root tree?
+private static final String ROOT_OF_TREE_VARIABLE_LOCATION = "Tree";  // In what class is the variable declared? Father of AvlTree? in AvlTree?
+// Node of the tree related: (Question are related to inside that Node class you are using):
+private static final String NODE_CLASS_NAME = "TreeNode";  // Name of the class you are using for the Nodes in the tree
+private static final String GET_LEFT_VARIABLE_NAME = "left";  // Name of the variable you are using to to hold left node
+private static final String GET_RIGHT_VARIABLE_NAME = "right";  // Name of the variable you are using to to hold right node
+private static final String GET_VALUE_VARIABLE_NAME = "value";  // Name of the variable you are using to to hold the value
+
+
+Commands are available in Commands Format file.
+
+Ben.

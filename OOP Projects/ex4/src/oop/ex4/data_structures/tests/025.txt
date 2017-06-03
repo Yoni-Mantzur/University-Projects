@@ -1,0 +1,11 @@
+# complex example 3
+2 3 8 4 1 6 5 7
+size 8
+contains 1 2
+contains 2 1
+contains 3 0
+contains 4 2
+contains 5 3
+contains 6 1
+contains 7 3
+contains 8 2

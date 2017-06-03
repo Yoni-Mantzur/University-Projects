@@ -1,0 +1,5 @@
+# simple delete + size
+
+add 5 true
+delete 5 true
+size 0

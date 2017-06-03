@@ -1,0 +1,4 @@
+# simple size test of a non-empty tree
+
+add 5 true
+size 1

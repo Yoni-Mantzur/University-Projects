@@ -1,0 +1,51 @@
+# Random time
+data 81 62 57 77 96 56 99 23 79 32 53 15 18 26 75 12 22 8 89 63 73 66 85 21 36 35 25 42 39 37 71 45 83 19 5 51 78 13 3 48 58 54 72 24 91 52 2 41 33 100 93 95 4 74 65 92 80
+add 300 true
+add 399 true
+add 299 true
+add 199 true
+add 195 true
+add 150 true
+add 151 true
+add 152 true
+add 153 true
+add 301 true
+add 311 true
+add 312 true
+add 380 true
+add 149 true
+add 148 true
+print
+iter
+size 72
+delete 81 true
+print
+delete 62 true
+print
+delete 57 true
+print
+delete 77 true
+print
+delete 96 true
+delete 56 true
+delete 99 true
+delete 23 true
+delete 79 true
+delete 32 true
+delete 53 true
+delete 15 true
+delete 18 true
+delete 26 true
+delete 75 true
+delete 12 true
+delete 22 true
+delete 41 true
+delete 100 true
+delete 95 true
+delete 93 true
+delete 80 true
+delete 83 true
+iter
+size 49
+stress
+stressdel

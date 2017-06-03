@@ -1,0 +1,4 @@
+# simple copy constructror for non-empty tree
+1 3 5 7
+copy
+size 4

@@ -1,0 +1,11 @@
+# simple left-left rotation after delete
+
+add 5 true
+add 6 true
+add 3 true
+add 1 true
+delete 6 true
+contains 5 1
+contains 3 0
+contains 1 1
+contains 6 -1

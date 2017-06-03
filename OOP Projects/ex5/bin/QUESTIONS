@@ -1,0 +1,78 @@
+#Week 8 Questions
+#================
+
+# Choose the correct statement about the Factory design pattern
+#1: Every Factory is a class that implements the Factory interface.
+#2: All the objects that a factory returns are always the same object (all pointers 
+#   point to the same object).
+#3: The reference returned by a Factory may be a static data member of the factory.
+#4: If a Factory can produce some object, then it is the only way to produce that kind of object.
+
+w8Answer1 = 3
+# optional explanation.
+
+#Choose the incorrect statement:
+#1: The source code of a module designed according to the open-closed principle should not be 
+#   changed (or changed as little as possible).
+#2: In a design that satisfies modular decomposability each module is independent of the others
+#   and therefore can serve other purposes if combined with other modules.
+#3: A Factory may be a class, an interface, or a method.
+#4: The constructors of a Singleton class must not be public.
+
+w8Answer2 = 1
+# optional explanation.
+
+#Choose all correct statements:
+#1: if a software is composed of modules that can be used in other programs
+#   as well, then we can say that this software’s design satisfies Modular Composability.
+#2: The polymorphism mechanism supports the Open-Closed principle.
+#3: If we want to create a sorting strategy, a good solution would be to create a class called 
+#   SimpleSort and the classes representing the different sorting strategies should extend this class.
+#4: The Understandability principle says the code has to be readable (well documented, descriptive 
+#   variable names, etc').
+#5: The open-closed principle says that a module should be open for modification but closed to extension.
+#6: A class that all its fields and methods are static can also be called a Singleton.
+
+w8Answer3 = (1,2)
+# The answer should be a group of the chosen numbers, i.e. (1,7) or (2,6,1), etc'.
+# optional explanation.
+
+
+#Week 9 Questions
+#============
+
+# When reading bytes from a large file, we should use a buffered reader because:
+#1: In Java, files with size greater than a certain size cannot be read without using a buffer.
+#2: If we don't use a buffer, the system memory becomes overloaded.
+#3: Using a buffered reader is the only way to read files in java, and it holds for non-large files as well.
+#4:  buffered reading takes advantage of properties of the OS and the hardware to speed up the process
+
+w9Answer1 = 4
+# optional explanation.
+
+#If we want to be able to read compressed files and also use a buffer to read them, a good solution
+#would include:
+#1: Creating a class that extends CompressedFileInputStream and add a buffered reading capability to it.
+#2: Creating a class that extends BufferedFileInputStream and add a decompression capability to it.
+#3: Creating a class that extends InputStream that reads to a buffer, and another class that 
+#   extends InputStream that uses decompression.
+#4: Creating a class that extends InputStream and add buffered reading and a decompression capability to it.
+
+w9Answer2 = 3
+# optional explanation.
+
+# If A decorates B then A also composes B.
+#1: Correct
+#2: Incorrect
+
+w9Answer3 = 1
+# optional explanation.
+
+#Which of the following is not true?
+#1: Scanner can receive a BufferedInputStream as a parameter.
+#2: A BufferedInputStream can receive a Scanner as a parameter.
+#3: BufferedInputStream's constructor can receive another BufferedInputStream as a parameter.
+#4: In Java, when we read a file’s content, or we write content to a file, an I/O exception might occur.
+
+w9Answer4 = 2
+# optional explanation.

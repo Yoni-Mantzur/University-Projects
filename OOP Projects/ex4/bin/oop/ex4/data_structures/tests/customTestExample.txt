@@ -1,0 +1,18 @@
+c
+add 5 true
+add 10 true
+contains 5 0
+contains 10 1
+add 10 false
+add 15 true
+#
+# RR Case - Should have rotated left (5-> 10-> 15) should be (5 <-10-> 15)
+#
+contains 15 1
+contains 5 1
+contains 10 0
+size 3
+iter
+print
+copy
+add 50 true

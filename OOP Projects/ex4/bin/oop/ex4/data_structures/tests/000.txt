@@ -1,0 +1,5 @@
+# minNodes - 10 20 30 
+
+minNodes 10 232
+minNodes 20 28656
+minNodes 30 3524577
