@@ -1,0 +1,3 @@
+push constant 30000
+push constant 29999
+gt

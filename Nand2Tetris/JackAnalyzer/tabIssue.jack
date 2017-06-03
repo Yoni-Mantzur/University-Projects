@@ -1,0 +1,58 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/10/ExpressionLessSquare/SquareGame.jack
+
+/** Expressionless version of projects/10/Square
+/SquareGame.jack. */
+
+
+
+class TabIssue {
+   field String a,x,y,z,w,u, catchy;
+   field int catchy2;
+
+    /* // */
+   constructor SquareGame new() {
+      let x = "yo man";
+      /** another try to confuse
+      you mohaha*/ let y = "";
+      let z = "\t";
+      let u = "\n";
+      let w = "\tyoman\n";
+      let a = "text //";
+      let catchy = "/*bla//a*/qqq";
+      let catchy2 = /*bla//a*/ 9765;
+      /*veryevilcomment*/ let z = "seeyounow" /*evilcomment*/ ;
+      let a = "another one"; /* //xxx
+                                  */ let a = "anotheranother";
+      }
+
+    /**  EMPTY TAGS TESTS */
+   method void dispose() {
+
+      }
+
+   method void try()
+   {
+        while (i<10)
+        {
+
+        }
+
+        if (catchy > 100)
+        {
+
+        }
+        else
+        {
+
+        }
+   }
+
+
+
+
+
+
+}
